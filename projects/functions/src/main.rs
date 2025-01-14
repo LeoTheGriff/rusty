@@ -50,5 +50,8 @@ fn compare_conditionals(number: i32) {
     // if-let
     let condition = true;
     let number = if condition { 5 } else { 6 };
+    // Remember that blocks of code evaluate to the last expression in them, and numbers by themselves are also expressions.  
+    // let number = if condition { 5 } else { "six" }; // ERROR: `if` and `else` have incompatible types
+    // Therefore they must be the same type in this expression
     println!("The value of number is: {}", number);
 }
