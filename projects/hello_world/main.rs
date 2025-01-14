@@ -17,4 +17,13 @@ fn main() {
     // BOOLEAN OPERATORS
     let t = true;
     let f: bool = false; // with explicit type annotation
+
+    // TEXT
+    // Characters are single quoted and represent a Unicode Scalar Value
+    let c = 'z';
+    let z: char = 'ℤ'; // with explicit type annotation
+    let heart_eyed_cat = '😻';
+
+    // Strings are double quoted and UTF-8 encoded
+    let s = "hello";
 }
