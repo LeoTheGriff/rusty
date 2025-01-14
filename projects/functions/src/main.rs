@@ -1,3 +1,6 @@
+/// Documentation comments are denoted by three slashes.
+/// They support Markdown notation.
+/// You can use `cargo doc --open` to generate and view the documentation for your project.
 fn five() -> i32 {
     // You can return early from a function by using the return keyword and specifying a value,
     // but most functions return the last expression implicitly.
