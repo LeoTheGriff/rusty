@@ -32,7 +32,17 @@ fn main() {
 
 
     println!("Hello Compound Types!");
+
+    // Tuples group a number of values with a variety of types into one compound type.
+    // Tuples have a fixed length.
     let tup: (i32, f64, u8) = (500, 6.4, 1);
+
+    // Tuples are mutable and can be accessed by destructuring or index
     let mut tup = (500, 6.4, 1);
+    println!("The value of y is: {}", tup.2);
     tup = (500, 6.4, 2);
+    println!("The value of y is: {}", tup.2); // Accessing tuple elements by index, starting at 0
+    let (x, y, z) = tup;
+    println!("The value of y is: {}", y); // Using pattern matching to destructure a tuple
+
 }
