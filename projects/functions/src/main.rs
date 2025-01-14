@@ -1,9 +1,11 @@
 fn main() {
     println!("Hello, world!");
 
-    another_function();
+    print_labelled_measurement(5, 'm');
+
 }
 
-fn another_function() {
-    println!("Another function.");
+// You must declare the type of each parameter in the function signature.
+fn print_labelled_measurement(value: i32, unit_label: char) {
+    println!("The measurement value is: {value}{unit_label}");
 }
