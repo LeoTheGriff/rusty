@@ -34,6 +34,7 @@ fn main() {
 
     println!("Hello Compound Types!");
 
+    // TUPLES
     // Tuples group a number of values with a variety of types into one compound type.
     // Tuples have a fixed length.
     let _tup: (i32, f64, u8) = (500, 6.4, 1);
@@ -50,7 +51,24 @@ fn main() {
     // Expressions implicitly return the unit value if they don’t return any other value.
     let _unit = ();
     let _unit: () = ();
+    // return _unit;
 
-    return _unit;
+    // ARRAYS
+    // Arrays have a fixed length and contain elements of the same type.
+    let _a = [1, 2, 3, 4, 5];
+    let _a: [i32; 5] = [1, 2, 3, 4, 5]; // with explicit type annotation
+    let _a: [3; 5] // [3, 3, 3, 3, 3] // Initial is the value;  Second is the length to repeat.
+
+    // Accessing array elements
+    // Arrays are zero-indexed and strictly typed.
+    // Accessing an index that is out of bounds will cause a runtime error
+    let _first = a[0];
+    let _second = a[1];
+
+    // VECTORS
+    // A vector is a similar collection type provided by the standard library that is allowed to grow or shrink in size.
+    let _v = vec![1, 2, 3, 4, 5]; // A vector is represented by Vec<T>
+    let _v: Vec<i32> = Vec::new(); // with explicit type annotation
+
 
 }
