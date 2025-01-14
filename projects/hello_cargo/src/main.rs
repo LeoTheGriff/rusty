@@ -57,7 +57,9 @@ fn main() {
     // Arrays have a fixed length and contain elements of the same type.
     let _a = [1, 2, 3, 4, 5];
     let _a: [i32; 5] = [1, 2, 3, 4, 5]; // with explicit type annotation
-    let _a: [3; 5] // [3, 3, 3, 3, 3] // Initial is the value;  Second is the length to repeat.
+    let a = [3; 5]; // [3, 3, 3, 3, 3] // Initial is the value;  Second is the length to repeat.
+
+    print_array(a);
 
     // Accessing array elements
     // Arrays are zero-indexed and strictly typed.
@@ -71,4 +73,9 @@ fn main() {
     let _v: Vec<i32> = Vec::new(); // with explicit type annotation
 
 
+}
+
+// Another function
+fn print_array(a: [i32; 5]) {
+    println!("The value of a is: {:?}", a);
 }
