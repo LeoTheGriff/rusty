@@ -47,7 +47,10 @@ fn main() {
     println!("The value of y is: {}", _y); // Using pattern matching to destructure a tuple
 
     // The tuple without any values has a special name, unit.
+    // Expressions implicitly return the unit value if they don’t return any other value.
     let _unit = ();
     let _unit: () = ();
+
+    return _unit;
 
 }
