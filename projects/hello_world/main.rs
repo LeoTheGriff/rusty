@@ -13,5 +13,8 @@ fn main() {
 
     // remainder
     let remainder = 43 % 5;
-
+    
+    // BOOLEAN OPERATORS
+    let t = true;
+    let f: bool = false; // with explicit type annotation
 }
