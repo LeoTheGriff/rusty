@@ -1,6 +1,9 @@
 fn main() {
     println!("Hello, world!");
 
+    
+    println!("Hello, data types!");
+
     // NUMERIC OPERATORS
     // Basic operators as expected
     let sum = 5 + 10;
@@ -26,4 +29,8 @@ fn main() {
 
     // Strings are double quoted and UTF-8 encoded
     let s = "hello";
+
+
+    println!("Hello Compound Types!");
+
 }
