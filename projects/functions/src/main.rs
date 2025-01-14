@@ -13,9 +13,42 @@ fn main() {
     let x = five();
 
     print_labelled_measurement(x, 'm');
+
+    compare_conditionals(3);
+    compare_conditionals(6);
+
 }
 
 // You must declare the type of each parameter in the function signature.
 fn print_labelled_measurement(value: i32, unit_label: char) {
     println!("The measurement value is: {value}{unit_label}");
+}
+
+fn compare_conditionals(number: i32) {
+    
+    println!("Comparing conditionals for number: {}", number);
+
+    // if-else
+    // Expressions must evaluate to a boolean value.
+    if number < 5 {
+        println!("Condition is true");
+    } else {
+        println!("Condition is false");
+    }
+
+    // if-else if-else
+    if number % 4 == 0 {
+        println!("Number is divisible by 4");
+    } else if number % 3 == 0 {
+        println!("Number is divisible by 3");
+    } else if number % 2 == 0 {
+        println!("Number is divisible by 2");
+    } else {
+        println!("Number is not divisible by 4, 3, or 2");
+    }
+
+    // if-let
+    let condition = true;
+    let number = if condition { 5 } else { 6 };
+    println!("The value of number is: {}", number);
 }
