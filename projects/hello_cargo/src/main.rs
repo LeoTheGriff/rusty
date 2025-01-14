@@ -73,6 +73,29 @@ fn main() {
     let _v: Vec<i32> = Vec::new(); // with explicit type annotation
 
 
+    // EXPRESSIONS
+    // Rust is an expression-based language, meaning that most constructs in Rust return a value.
+    // - Statements are instructions that perform some action and do not return a value.
+    // - Expressions evaluate to a resultant value.
+    //     > 5 + 6 is an expression that evaluates to 11.
+    //     > Calling a function or macro is an expression.
+    //     > A new scope block created with curly brackets is an expression.
+
+    let y = 6; // This is a statement.
+    // let x = (let y = 6); // This is an error because let y = 6 is a statement and does not return a value.
+
+    let x = 5 + 6; // This is an expression that evaluates to 11, which is then bound to x with a let statement.
+
+    // Blocks are expressions too that, in this case, returns a value of 4.
+    let y = {
+        let x = 3;
+        x + 1
+    };
+    // Note that the final expression in the block does not end with a semicolon.
+    // Expressions do not include ending semicolons.
+    // If you add a semicolon to the end of an expression, you turn it into a statement, which will then not return a value.
+    println!("The value of y is: {y}");
+
 }
 
 // Another function
